@@ -1,0 +1,596 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Footwear Concept</title>
+<link href="/footwear/_ui/css/slideshow.101130.css" rel="stylesheet" />
+<style type="text/css">
+
+
+.thumbgallery_load {
+	position:absolute;
+    padding:0;
+	margin:0;
+    height: 81px;
+    background:url("/footwear/_ui/img/shoes_on_load.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 792px;
+    float: left;
+    z-index:21 !important;
+    clear:both;
+    display:block;
+}
+.thumbgallery_men {
+	position:absolute;
+    padding:0;
+	margin:0;
+    height: 81px;
+    background:url("/footwear/_ui/img/shoes.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 792px;
+    float: left;
+    z-index:21 !important;
+    clear:both;
+    display:none;
+}
+.thumbgallery_women {
+    position:absolute;
+    padding:0;
+	margin:0;
+    height: 81px;
+    background:url("/footwear/_ui/img/shoes_womens.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 792px;
+    float: left;
+    z-index:21 !important;
+    clear:both;
+    display:none;
+}
+.thumbs {
+    position:relative;
+    padding:0;
+	margin:0;
+    height: 80px;
+    background:url("/footwear/_ui/img/tarmactrailback.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 792px;
+    float: left;
+    z-index:5 !important;
+}
+#tab_1 {
+    position:absolute;
+    width:111px;
+    height:80px;
+    top:0px;
+    left:74px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab_2 {
+    position:absolute;
+    width:111px;
+    height:80px;
+    top:0px;
+    left:184px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab_3 {
+    position:absolute;
+    width:111px;
+    height:80px;
+    top:0px;
+    left:287px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab_4 {
+    position:absolute;
+    width:111px;
+    height:80px;
+    top:0px;
+    left:396px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab_5 {
+    position:absolute;
+    width:111px;
+    height:80px;
+    top:0px;
+    left:504px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab_6 {
+    position:absolute;
+    width:111px;
+    height:80px;
+    top:0px;
+    left:610px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab1 {
+    position:absolute;
+    width:78px;
+    height:80px;
+    top:0px;
+    left:89px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab2 {
+    position:absolute;
+    width:75px;
+    height:80px;
+    top:0px;
+    left:184px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab3 {
+    position:absolute;
+    width:74px;
+    height:80px;
+    top:0px;
+    left:277px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab4 {
+    position:absolute;
+    width:74px;
+    height:80px;
+    top:0px;
+    left:366px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab5 {
+    position:absolute;
+    width:76px;
+    height:80px;
+    top:0px;
+    left:459px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab6 {
+    position:absolute;
+    width:71px;
+    height:80px;
+    top:0px;
+    left:547px;
+    cursor:pointer;
+    z-index:1;
+}
+#tab7 {
+    position:absolute;
+    width:73px;
+    height:80px;
+    top:0px;
+    left:633px;
+    cursor:pointer;
+    z-index:1;
+}
+.tabs {
+    position:absolute;
+    top:80px;
+    width:792px;
+    height:361px;
+}
+.panels {
+    position:absolute;
+    top:80px;
+    width:792px;
+    height:361px;
+}
+#slider{
+    position: relative;
+    text-align: left;
+    left:0;
+    width: 792px;
+    float: left;
+    z-index:20 !important;
+}
+#slider2 {
+    float: left;
+    left: 0;
+    position: relative;
+    text-align: left;
+    width: 792px;
+}
+#slider .ui-widget-content{
+	border:none;
+	
+}
+.ui-slider .ui-slider-handle {
+    z-index:20 !important;
+    position:absolute;
+    width:110px !important;
+    height:117px !important;
+}
+#slider .ui-state-default {
+    z-index:20 !important;
+}
+#slider2 .ui-slider-handle {
+    z-index:19 !important;
+    left:0px;
+    top:-2.03em;
+    cursor: pointer;
+    background:url("/footwear/_ui/img/tabtop_womens_on.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width:110px !important;
+    height:32px !important;
+    border:none;
+    margin-left:0.0em;
+}
+#slider2 .disabled-ui-state-default {
+    background: url("/footwear/_ui/img/tabtop_women_off.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    height: 34px;
+    left: 0 !important;
+    margin-left: 0.0em !important;
+    top: -2.03em;
+    width: 110px !important;
+    z-index: 19 !important;
+    position:absolute;
+}
+#slider2 .live-ui-state-default {
+    left:0px;
+    top:-2.03em !important;
+    cursor: pointer;
+    background:url("/footwear/_ui/img/w_fullTab.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height:117px;
+    border:none;
+    margin-left:0.0em;
+    height: 117px !important;
+    position: absolute;
+    width: 110px !important;
+    z-index: 20 !important;
+}
+.ui-slider-horizontal {
+    height:0px !important;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    left:0px;
+    top:-2.03em !important;
+    cursor: pointer;
+    background:url("/footwear/_ui/img/tabtop_mens_on.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width:110px !important;
+    height:32px !important;
+    border:none;
+    margin-left:0.0em;
+    z-index:20 !important;
+}
+.ui-slider-horizontal .new-ui-slider-handle {
+    left:0px;
+    top:-2.03em !important;
+    cursor: pointer;
+    background:url("/footwear/_ui/img/fullTab.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height:117px;
+    border:none;
+    margin-left:0.0em;
+    height: 117px !important;
+    position: absolute;
+    width: 110px !important;
+    z-index: 20 !important;
+}
+.ui-slider-horizontal .disabled-ui-slider-handle {
+    background: url("/footwear/_ui/img/tabtop_mens_off.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    height: 34px;
+    left: 0 !important;
+    margin-left: 0.0em !important;
+    top: -2.03em;
+    width: 110px !important;
+    z-index: 19 !important;
+    position:absolute;
+}
+ul#coords_wrapper_men {
+    width:792px;
+    height:80px;
+    z-index:30;
+    position:absolute;
+    left: 0px;
+    top:0px;
+    margin:0;
+    display:none;
+    list-style-type:none;
+    padding-left:0px !important;
+}
+ul#coords_wrapper_men li {
+
+}
+ul#coords_wrapper_women {
+    width:792px;
+    height:80px;
+    z-index:30;
+    position:absolute;
+    left: 0px;
+    top:-17px;
+    display:none;
+    list-style-type:none;
+    padding-left:0px !important;
+}
+ul#coords_wrapper_women li {
+
+}
+#slider_container {
+    height:442px;
+    width:792px;
+    position:relative;
+}
+.hidden {
+    /*display:none;*/
+}
+.selected {
+    /*display:block;*/
+}
+.url {
+    display: block;
+	left: -999999em;
+	position: absolute;
+	top: -999999em;
+}
+.clearIt {
+    content: ".";
+	display: block;
+	clear: both;
+	height: 0px;
+	margin-top: -1px;
+	visibility: hidden;
+}
+/*********************************************
+*   SLIDESHOW    
+**********************************************/
+.large {height:649px !important; width:996px !important;position: relative;}
+.small {height:362px !important; width:792px !important;position: relative;}
+.slideshow {float:none;}
+#three .slideshow a.paddle-right{top:290px !important; right:0px !important; width:36px !important; height:36px !important; 
+    background:url(/footwear/_ui/img/sliderRight.png) no-repeat scroll 0 0 transparent !important}
+#three .slideshow a.paddle-left{top:290px !important; width:36px !important; height:36px !important;  
+    background:url(/footwear/_ui/img/sliderLeft.png) no-repeat scroll 0 0 transparent !important}
+.controller {display:none;}
+div.slideshow div.controls {display:none;}
+
+</style>
+
+<script type="text/javascript" src="/footwear/_ui/js/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="/static/js/jquery/floatbox.js"></script>
+<script type="text/javascript" src="/static/js/jquery/core_601_modified.js"></script>
+<script type="text/javascript" src="/static/js/jquery/options.js"></script>
+<script type="text/javascript" src="/footwear/_ui/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" src="/footwear/_ui/js/module.slideshow.js"></script>
+<script type="text/javascript" src="/footwear/_ui/js/fetchMenSelected.js"></script>
+<script type="text/javascript" src="/footwear/_ui/js/fetchWomenSelected.js"></script>
+<script src="/static/js/eb-plugins.js"></script>
+<script src="/static/js/jquery/productVideo.js" type="text/javascript"></script>
+<script src="/static/js/jquery/google_jsapi.js" type="text/javascript"></script>
+<script src="/static/js/jquery/swfobject.js" type="text/javascript"></script>
+<script src="/static/js/jquery/onYouTubePlayerReady.js" type="text/javascript"></script>
+<script type="text/javascript" src="/footwear/_ui/js/jquery.or.js"></script>
+<script type="text/javascript" src="/footwear/_ui/js/jquery.waitforimages.js"></script>
+<script type="text/javascript">
+
+jQuery(document).ready(function () {
+    (function (jQuery) {
+
+        var $posViewport = 0;
+        var $posSlipon = 74;
+        var $posChuckka = 184;
+        var $posDeparture = 287;
+        var $posCircuit = 397;
+        var $posLukla = 504;
+        var $posPro = 610;
+
+        var $posViewport = 0;
+        var $posLeatherMoc = 89;
+        var $posBallet = 184;
+        var $posMaryJane = 277;
+        var $posW_Slipon = 366;
+        var $posW_FullCircuit = 448;
+        var $posW_Lukla = 547;
+        var $pos_LuklaPro = 633;
+
+        var slider = jQuery("<div id='slider' data-clicked='true'></div>").insertBefore(jQuery("#coords_wrapper_men")).slider({
+            animate: 'true'
+        });
+        var slider2 = jQuery("<div id='slider2' data-clicked='true'></div>").insertBefore(jQuery("#coords_wrapper_men")).slider({
+            animate: 'true'
+        });
+
+        setTimeout(function () {
+            jQuery("#slider .ui-slider-handle").animate({
+                left: '174px',
+            }, 1500),
+            jQuery("#slider2 .ui-slider-handle").animate({
+                left: '56px',
+            }, 1500);
+
+            jQuery("#slider a").attr("data-selected", "men");
+            jQuery("#slider2 a").attr("data-selected", "women");
+        }, 1000);
+
+        jQuery("#slider .ui-slider-handle").add(jQuery("#slider2 .ui-slider-handle")).draggable({
+            animate: true,
+            step: 1,
+            axis: "x",
+            //snap: '.snapIt',
+            containment: "parent",
+        });
+
+        setTimeout(function () {
+            jQuery(".ui-slider-horizontal .ui-slider-handle").css({ position: 'absolute' });
+            jQuery("#slider2 .ui-slider-handle").css({ position: 'absolute' });
+            jQuery("head").append('<style> .ui-slider-horizontal .ui-slider-handle{left:174px !important} </style>');
+            jQuery("head").append('<style> #slider2 .ui-slider-handle{left:56px !important} </style>');
+        },5000);
+        
+
+        var $activeButton = "";
+
+        jQuery("#slider .ui-slider-handle, #slider2 .ui-slider-handle").click(function () {
+
+            if (jQuery(this).data("disabled") == true) {
+                    
+                $activeButton = jQuery(this).data("selected");
+                switch ($activeButton) {
+                    case "men":
+                        jQuery("head").append('<style> .ui-slider-horizontal .ui-slider-handle{left:0px;} </style>');
+                        fetchMenSelected();
+                        break;
+                    case "women":
+                        jQuery("head").append('<style> #slider2 .ui-slider-handle{left:0px;} </style>');
+                        fetchWomenSelected();
+                        break;
+                }
+            } else {
+                $activeButton = jQuery(this).data("selected");
+                    
+                switch ($activeButton) {
+                    case "men":
+                        fetchMenSelected();
+                        break;
+                    case "women":
+                        fetchWomenSelected();
+                        break;
+                }
+            }
+        });
+
+    })(jQuery);
+        
+    jQuery('.slideshow').slideshow();
+
+});
+</script>
+
+
+
+</head>
+
+<body  style="padding:20px 0 200px 400px">
+
+    <div class="slideshow" rel="{ 'stopSlideId': 1 , 'hoverStopSlide': 'false'}">
+        <div class="slides">
+            <div>
+                <img src="/footwear/_ui/img/footwear_line_slide0.jpg" width="792" height="362"
+                    border="0" usemap="#m_slide_01" /></div>
+            <div>
+                <img src="/footwear/_ui/img/footwear_line_slide1.jpg" width="792" height="362"
+                    border="0" usemap="#m_slide_01" /></div>
+            <div>
+                <img src="/footwear/_ui/img/footwear_line_slide2.jpg" width="792" height="362"
+                    border="0" usemap="#m_slide_01" /></div>
+            <div>
+                <img src="/footwear/_ui/img/footwear_line_slide3.jpg" width="792" height="362"
+                    border="0" usemap="#m_slide_01" /></div>
+        </div>
+    </div>
+
+    <div id="slider_container">
+        <ul id="coords_wrapper_men" class="tab" style="display:none;">
+            <li id="tab_1" class="snapIt button">
+                <a href="#tab-01">
+                    <img src="/footwear/_ui/img/spacer.gif" width="111" height="80" alt="" /></a></li>
+            <li id="tab_2" class="snapIt button">
+                <a href="#tab-02">
+                    <img src="/footwear/_ui/img/spacer.gif" width="111" height="80" alt="" /></a></li>
+            <li id="tab_3" class="snapIt button">
+                <a href="#tab-03">
+                    <img src="/footwear/_ui/img/spacer.gif" width="111" height="80" alt="" /></a></li>
+            <li id="tab_4" class="snapIt button">
+                <a href="#tab-04">
+                    <img src="/footwear/_ui/img/spacer.gif" width="111" height="80" alt="" /></a></li>
+            <li id="tab_5" class="snapIt button">
+                <a href="#tab-04">
+                    <img src="/footwear/_ui/img/spacer.gif" width="111" height="80" alt="" /></a></li>
+            <li id="tab_6" class="snapIt button">
+                <a href="#tab-06">
+                    <img src="/footwear/_ui/img/spacer.gif" width="111" height="80" alt="" /></a></li>
+        </ul>
+        <ul id="coords_wrapper_women" class="tab" style="display:none;">
+            <li id="tab1" class="snapIt button">
+                <a href="#panel-01">
+                    <img src="/footwear/_ui/img/spacer.gif" width="78" height="80" alt="" /></a></li>
+            <li id="tab2" class="snapIt button">
+                <a href="#panel-02">
+                    <img src="/footwear/_ui/img/spacer.gif" width="75" height="80" alt="" /></a></li>
+            <li id="tab3" class="snapIt button">
+                <a href="#panel-03">
+                    <img src="/footwear/_ui/img/spacer.gif" width="74" height="80" alt="" /></a></li>
+            <li id="tab4" class="snapIt button">
+                <a href="#panel-04">
+                    <img src="/footwear/_ui/img/spacer.gif" width="74" height="80" alt="" /></a></li>
+            <li id="tab5" class="snapIt button">
+                <a href="#panel-05">
+                    <img src="/footwear/_ui/img/spacer.gif" width="76" height="80" alt="" /></a></li>
+            <li id="tab6" class="snapIt button">
+                <a href="#panel-06">
+                    <img src="/footwear/_ui/img/spacer.gif" width="71" height="80" alt="" /></a></li>
+            <li id="tab7" class="snapIt button">
+                <a href="#panel-07">
+                    <img src="/footwear/_ui/img/spacer.gif" width="73" height="80" alt="" /></a></li>
+        </ul>
+        <div class="tabs" id="men">
+            <div id="tab-01" class="description panel" style="display:none;">
+                <var class="url">/Footwear/slipon.html</var>
+            </div>
+            <div id="tab-02" class="description panel" style="display:none;">
+                <var class="url">/Footwear/chukka.html</var>
+            </div>
+            <div id="tab-03" class="description panel" style="display:none;">
+                <var class="url">/Footwear/laceup.html</var>
+            </div>
+            <div id="tab-04" class="description panel" style="display:none;">
+                <var class="url">/Footwear/fullcircuit.html</var>
+            </div>
+            <div id="tab-05" class="description panel" style="display:none;">
+                <var class="url">/Footwear/lukla.html</var>
+            </div>
+            <div id="tab-06" class="description panel" style="display:none;">
+                <var class="url">/Footwear/luklapro.html</var>
+            </div>
+        </div>
+        <div class="panels" id="women">
+            <div id="panel-01" class="description panel" style="display:none;">
+                <var class="url">/Footwear/leathermoc.html</var>
+            </div>
+            <div id="panel-02" class="description panel" style="display:none;">
+                <var class="url">/Footwear/christineBallet.html</var>
+            </div>
+            <div id="panel-03" class="description panel" style="display:none;">
+                <var class="url">/Footwear/maryjane.html</var>
+            </div>
+            <div id="panel-04" class="description panel" style="display:none;">
+                <var class="url">/Footwear/w_slipon.html</var>
+            </div>
+            <div id="panel-05" class="description panel" style="display:none;">
+                <var class="url">/Footwear/w_fullCircuit.html</var>
+            </div>
+            <div id="panel-06" class="description panel" style="display:none;">
+                <var class="url">/Footwear/w_lukla.html</var>
+            </div>
+            <div id="panel-07" class="description panel" style="display:none;">
+                <var class="url">/Footwear/w_luklapro.html</var>
+            </div>
+        </div>
+        
+        <div class="thumbgallery_load">
+            <img src="/footwear/_ui/img/spacer.gif" class="shoes" width="792" height="80" alt="" border="0" />
+        </div>
+        <div class="thumbgallery_men">
+            <img src="/footwear/_ui/img/spacer.gif" class="shoes" width="792" height="80" alt="" border="0" />
+        </div>
+        <div class="thumbgallery_women">
+            <img src="/footwear/_ui/img/spacer.gif" class="shoes" width="792" height="80" alt="" border="0" />
+        </div>
+        <div class="thumbs">
+            <img src="/footwear/_ui/img/spacer.gif" class="shoes" width="792" height="80" alt="" border="0" />
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>

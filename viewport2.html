@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<title>jmcmurdo-t420</title>
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script> 
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+<style type="text/css">
+#slider_container {
+	width:750px;
+	height:180px;
+	border:1px solid #000;
+	left:0;
+	top:0;
+}
+#slider {
+	background-image:url('slider.png');
+	background-color:#CCC;
+	width:750px;
+	height:150px;
+	position:relative;
+	top:30px;
+	left:0;
+}
+#red, #blue, #teal, #green, #orange {
+	width:150px;
+	height:180px;
+	position:relative;
+	float:left;
+	z-index:1;
+}
+#viewport {
+	background-image:url('viewport.png');
+	background-color:transparent;
+	width:150px;
+	height:180px;
+	position:absolute;
+	top:10px;
+	z-index:9999;
+}
+#color_container {
+	position:relative;
+}
+</style>
+</head>
+<body>
+<div id="slider_container">
+	<div id="slider">
+		<div id="red" class="snapIt"></div>
+		<div id="blue" class="snapIt"></div>
+		<div id="teal" class="snapIt"></div>
+		<div id="green" class="snapIt"></div>
+		<div id="orange" class="snapIt"></div>
+	</div>
+	<div id="viewport"></div>
+</div>
+
+<div id="color_container">RED!!!</div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#viewport").draggable({
+		containment: '#slider_container',
+		snap: '.snapIt',
+        axis: 'x'
+    });
+	var vPosViewport = 0
+	var vPosRed = 0;
+	var vPosBlue = 150;
+	var vPosTeal = 300;
+	var vPosGreen = 450;
+	var vPosOrange = 599;
+	
+	$("#viewport").bind('drag',function(e){
+		vPosViewport = $("div#viewport").position().left;
+		if (vPosViewport == vPosRed || vPosViewport < vPosBlue) {
+			$("#color_container").html( "RED!!!" );
+		} else if
+		(vPosViewport >= vPosBlue && vPosViewport <= vPosTeal) {
+			$("#color_container").html( "BLUE!!!" );
+		} else if
+		(vPosViewport >= vPosTeal && vPosViewport <= vPosGreen) {
+			$("#color_container").html( "TEAL!!!" );
+		} else if
+		(vPosViewport >= vPosGreen && vPosViewport <= vPosOrange) {
+			$("#color_container").html( "GREEN!!!" );
+		} else if
+		(vPosViewport == vPosOrange || vPosViewport > vPosGreen) {
+			$("#color_container").html( "ORANGE!!!" );
+		};
+	});
+});
+if ($posViewport >= $posSlipon && $posViewport <= $posChuckka) {
+    var $notSelected = jQuery(".tabs #tab2").add(jQuery(".tabs #tab3")).add(jQuery(".tabs #tab4")).add(jQuery(".tabs #tab5")).add(jQuery(".tabs #tab6"));
+    $notSelected.stop(true, true).fadeOut().removeClass("selected").css({ display: 'none' });
+    var activeTab = jQuery(".tabs #tab1");
+    jQuery(activeTab).stop(true, true).fadeIn().addClass("selected").css({ display: 'block' });
+} else
+if ($posViewport >= $posChuckka && $posViewport <= $posDeparture) {
+    var $notSelected = jQuery(".tabs #tab1").add(jQuery(".tabs #tab3")).add(jQuery(".tabs #tab4")).add(jQuery(".tabs #tab5")).add(jQuery(".tabs #tab6"));
+    $notSelected.stop(true, true).fadeOut().removeClass("selected").css({ display: 'none' });
+    var activeTab = jQuery(".tabs #tab2");
+    jQuery(activeTab).stop(true, true).fadeIn().addClass("selected").css({ display: 'block' });
+} else
+if ($posViewport >= $posDeparture && $posViewport <= $posCircuit) {
+    var $notSelected = jQuery(".tabs #tab1").add(jQuery(".tabs #tab2")).add(jQuery(".tabs #tab4")).add(jQuery(".tabs #tab5")).add(jQuery(".tabs #tab6"));
+    $notSelected.stop(true, true).fadeOut().removeClass("selected").css({ display: 'none' });
+    var activeTab = jQuery(".tabs #tab3");
+    jQuery(activeTab).stop(true, true).fadeIn().addClass("selected").css({ display: 'block' });
+} else
+if ($posViewport >= $posCircuit && $posViewport <= $posLukla) {
+    var $notSelected = jQuery(".tabs #tab1").add(jQuery(".tabs #tab2")).add(jQuery(".tabs #tab3")).add(jQuery(".tabs #tab5")).add(jQuery(".tabs #tab6"));
+    $notSelected.stop(true, true).fadeOut().removeClass("selected").css({ display: 'none' });
+    var activeTab = jQuery(".tabs #tab4");
+    jQuery(activeTab).stop(true, true).fadeIn().addClass("selected").css({ display: 'block' });
+} else
+if ($posViewport >= $posLukla && $posViewport <= $posPro) {
+    var $notSelected = jQuery(".tabs #tab1").add(jQuery(".tabs #tab2")).add(jQuery(".tabs #tab3")).add(jQuery(".tabs #tab4")).add(jQuery(".tabs #tab6"));
+    $notSelected.stop(true, true).fadeOut().removeClass("selected").css({ display: 'none' });
+    var activeTab = jQuery(".tabs #tab5");
+    jQuery(activeTab).stop(true, true).fadeIn().addClass("selected").css({ display: 'block' });
+} else
+if ($posViewport == $posPro || $posViewport > $posLukla) {
+    var $notSelected = jQuery(".tabs #tab1").add(jQuery(".tabs #tab2")).add(jQuery(".tabs #tab3")).add(jQuery(".tabs #tab4")).add(jQuery(".tabs #tab5"));
+    $notSelected.stop(true, true).fadeOut().removeClass("selected").css({ display: 'none' });
+    var activeTab = jQuery(".tabs #tab6");
+    jQuery(activeTab).stop(true, true).fadeIn().addClass("selected").css({ display: 'block' });
+}
+</script>
+</body>
+</html>

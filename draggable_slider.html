@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+<style type="text/css">
+#slider .ui-state-default{
+    width:39px;
+    height:39px;
+    border-radius:20px;
+    box-shadow:2px 2px 2px #333;
+    background-color:#fafafa;
+    background-image:none;
+    margin-top:-20px;
+    border: 1px solid #D3D3D3;
+}
+#slider{
+    position: relative;
+    text-align: left;
+    direction: ltr;
+    border: none;
+    border-radius: 3px;
+    height: 4px;
+    background: #B4B5B6;
+    margin-top: 100px;
+    width: 90%;
+    float: left;
+    margin-left: 2%;
+}
+#slider .ui-widget-content{
+	border:none;
+	
+}
+#holder{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#holder li{
+	position:absolute;
+    display:none;
+}
+#select{
+	/*display:none; */
+}
+
+</style>
+</head>
+<body>
+
+    <select id="select">
+    <option value="1">Option1</option>
+    <option value="2">Option2</option>    
+    <option value="3">Option3</option>    
+    <option value="4">Option4</option>    
+    <option value="5">Option5</option>        
+    </select>
+    <ul id="holder">
+        <li data-id="Option1"> First </li>
+        <li data-id="Option2"> Second </li>
+        <li data-id="Option3"> Third </li>
+        <li data-id="Option4"> Fourth </li>
+        <li data-id="Option5"> Fifth </li>
+    </ul>
+
+</body>
+</html>

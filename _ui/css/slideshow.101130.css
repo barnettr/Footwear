@@ -1,0 +1,97 @@
+div.slideshow.small {
+   width: 697px;
+   height: 448px;
+}
+
+div.slideshow.medium {
+   width: 795px;
+   height: 417px;	
+}
+
+div.slideshow {
+   position: relative;
+   width: 792px;
+   height: 362px;
+   margin: 0;
+   padding: 0;
+}
+
+div.slideshow div.slides {
+   position: absolute;
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   overflow: hidden;
+}
+
+div.slideshow div.slides div {
+   display: none;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top:0;
+   left:0;
+   overflow: hidden;
+}
+
+div.slideshow div.slides div.selected {
+   display: block;
+}
+
+div.slideshow div.controls {
+   position: absolute;
+   z-index: 3;
+   right: 10px;
+   top: 10px;
+}
+
+div.slideshow div.controls a {
+   display: block;
+   float: left;
+   margin: 0;
+   padding: 0 2px;
+   width: 11px;
+   height: 11px;
+   background: transparent url(/assets/ocp/content/skin/slideshow/dot_on.png) no-repeat center center;  
+}
+
+div.slideshow div.controls a.selected {
+   background-image: url('/assets/ocp/content/skin/slideshow/dot_off.png');
+}
+
+div.slideshow a.paddle-left, div.slideshow a.paddle-right {
+   position: absolute;
+   z-index: 2;
+   top: 174px;
+   width: 36px;
+   height: 36px;
+   cursor: pointer;
+}
+
+div.slideshow a.paddle-left {
+   left: 0;
+   background: transparent url(/footwear/_ui/img/sliderLeft.png) no-repeat 0px 0;
+}
+
+div.slideshow a.paddle-right {
+   right: 0;
+   background: transparent url(/footwear/_ui/img/sliderRight.png) no-repeat 0 0;
+}
+
+div.slideshow a.paddle-left:hover {
+   background-position: 0px 0;
+}
+
+div.slideshow a.paddle-right:hover {
+   background-position: 0px 0;
+}
+
+div.slideshow a.paddle-left:active {
+   background-position: 0 0;
+}
+
+div.slideshow a.paddle-right:active {
+   background-position: -74px 0;
+}

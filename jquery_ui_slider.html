@@ -1,0 +1,40 @@
+﻿<div data-role="page" id="slider-test" data-theme="a"> 
+    <div data-role="content">
+        <div data-role="fieldcontain">
+            <label for="slider">Input slider: 
+                <img id="theImage" src="http://jquerymobile.com/demos/1.0b2/docs/toolbars/glyphish-icons/09-chat2.png" alt="slider images" />
+            </label>
+            <input type="range" name="slider" id="slider" value="0" min="0" max="100"  />
+        </div>
+        
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $("#slider").change(function () {
+        sVal = $(this).val();
+
+        if (sVal > 21 && sVal <= 40) {
+            $('#theImage').attr('src', 'http://jquerymobile.com/demos/1.0b2/docs/toolbars/glyphish-icons/21-skull.png');
+            // add your post value functionality here
+        }
+
+        if (sVal > 41 && sVal <= 60) {
+            $('#theImage').attr('src', 'http://jquerymobile.com/demos/1.0b2/docs/toolbars/glyphish-icons/18-envelope.png');
+            // add your post value functionality here
+        }
+
+        if (sVal > 61 && sVal <= 80) {
+            $('#theImage').attr('src', 'http://jquerymobile.com/demos/1.0b2/docs/toolbars/glyphish-icons/100-coffee.png');
+            // add your post value functionality here
+        }
+
+        if (sVal > 81 && sVal <= 100) {
+            $('#theImage').attr('src', 'http://jquerymobile.com/demos/1.0b2/docs/toolbars/glyphish-icons/88-beermug.png');
+            // add your post value functionality here
+        }
+
+    });
+
+</script>

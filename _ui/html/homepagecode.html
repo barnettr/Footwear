@@ -1,0 +1,287 @@
+﻿<script type="text/javascript">
+    $j(document).ready(function () {
+        var copyText = '<style type="text/css">'
+                + 'h3.title {font-family:Arial, sans-serif;font-size:12px;font-weight:bold;color:#333333;margin-bottom:2px;line-height:16px;padding-left:23px;}'
+                + 'span.title {font-family:Arial, sans-serif;font-size:12px;font-weight:bold;color:#333333;margin-bottom:2px;line-height:16px;}'
+                + 'span.code {color:#FF611B;font-weight:bold;}'
+                + 'p.enterthis {font-family:Arial, sans-serif;font-size:12px;font-weight:normal;color:#333333;padding-left:23px;line-height:14px;width:245px !important;}'
+                + '.freeshipping {font-family:Arial, sans-serif;font-size:12px;font-weight:normal;color:#333333;line-height:14px;width:265px !important;}'
+				+ '.bltd {list-style:disc outside none;padding-bottom:10px;}'
+				+ '.entercode {padding-left:23px;}'
+                + '#promotionCodes p {margin-bottom:0px !important;}'
+				+ '#promotionCodes {height:220px !important;}'
+                + 'p.frc {font-family:Arial, sans-serif;font-size:11px;font-weight:normal;color:#777777;padding-left:23px;line-height:14px;width:245px !important;margin-top:5px !important;}'
+                + 'p.exclusions {font-family:Arial, sans-serif;font-size:11px;font-weight:normal;font-style:italic;color:#777777;padding-left:23px;line-height:14px;width:245px !important;margin-top:1px !important;}'
+                + 'p.exclusions a {text-decoration:underline !important;font-family:Arial, sans-serif;font-size:11px !important;font-weight:normal !important;font-style:italic;'
+				+ ' color:#777777 !important;line-height:14px;width:245px !important;margin-top:1px !important;}'
+                + 'hr.dotted {color:#cccccc;height:0;border-bottom:2px dotted #cccccc;margin:10px 0 10px 0;}'
+                + '#promotionCodes {position:relative;height:144px;}'
+                + '#promoCodeMessage {display:block;float:right;position:absolute;right:20px;text-align:left;top:54px;width:287px;}'
+				+ '#promoCodeMessage ul {padding-left:23px;}'
+				+ '.frame_style_2 {width:340px !important;}'
+                + '</style>'
+                + '<div id="promoCodeMessage">'
+				+ '<ul>'
+				+ '<li class="freeshipping bltd"><span class="title">25% OFF YOUR ENTIRE PURCHASE</span> when you buy pants or jeans</li>'
+				+ '<li class="freeshipping bltd"><span class="title">PLUS, FREE SHIPPING</span> on orders of $99 or more</p>'
+				+ '</ul>'
+				+ '<p class="freeshipping entercode">Enter Code: <span class="code">COTTON</span></p>'
+				+ '<p class="exclusions">Exclusions apply. <a class="floatbox" rel="floatbox" rev="type:ajax height:355 width:410 autoFitHTML:true '
+				+ ' scrolling:no outerClose:true controlsPos:tr" href="/assets/ocp/promos/130903_jeans_event/pop_up.html" title="See Details" alt="See Details" name="CART:Copy:Promo">'
+				+ 'See Details</a></p>'
+				+ '<hr class="dotted" />'
+                + '<h3 class="title">FRIENDS REWARDS CERTIFICATES:</h3>'
+                + '<p class="enterthis">Enter reward certificate number on the next page of checkout.</p>'
+                + '<p class="frc">(Friends Rewards Certificates may be combined with other promotions.)</p>'
+                + '</div>'
+        $j('body.DELIVERY--EXTRAS #promotionCodes').append(copyText);
+    });
+</script>
+<style>
+body.EB.CHECKOUT.SHOPPING-BAG.wishlist #new_rail { display: block}
+#cat1 #shoulder { height: 0px !important }
+body.EB #new_rail {
+    background-color: transparent;
+    clear: both;
+    display: block;
+    visibility: visible;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    *padding-bottom: 5px;
+    width: 996px !important;
+    z-index: 3;
+    margin-top: 2px !important;
+}
+#fbBox #fbCaption.fb_white { display: none !important }
+
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+div#fbBox {
+    height:401px !important;
+}
+
+#disclaimer_container
+{
+    width: 400px !important;
+    height: 434px !important;
+    padding-left: 28px;
+    padding-top:26px;
+    position: relative;
+    background-color:#333333;
+}
+.disclaimer_head {
+    font-family:"Arial", sans-serif;
+    color:#FF3333;
+    font-size:26px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.disclaimer_head_wh {
+    font-family:"Arial", sans-serif;
+    color:#FFFFFF;
+    font-size:26px;
+    text-transform:uppercase;
+    font-weight:regular;
+}
+.disclaimer_subhead {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    color:#FFFFFF;
+    font-size:12px;
+}
+.disclaimer_promocode_head {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    color:#FFFFFF;
+    font-size:18px;
+    padding-top:16px;
+    padding-right:12px;
+    line-height:1.2;
+}
+.disclaimer_promocode_subhead {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    color:#FFFFFF;
+    font-size:12px;
+}
+.disclaimer_copy
+{
+    font-size: 12px;
+    width: 370px;
+    line-height: 1.6;
+    color:#FFFFFF;
+    padding-top:16px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.disclaimer_copy p {
+    color:#FFFFFF;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    line-height: 1.6;
+}
+ .disclaimer_copy p a {
+    color:#FFFFFF;
+    text-decoration:underline;
+    font-size:14px;
+    font-weight:bold;
+ }
+#disclaimer_close
+{
+    display: none !important; /*font-size: 10px;
+    position: absolute;
+    right: -10px;
+    top: 10px;*/
+}
+#disclaimer_close a
+{
+    text-decoration: none;
+    color: #333333;
+}
+</style>
+<div style="position: relative;">
+    <img src="/assets/ocp/promos/130903_freeship/site_wide_rail.gif" border="0" width="996" height="25" usemap="#site_wide_rail"/>
+        <map name="site_wide_rail" id="site_wide_rail">
+            <area shape="rect" coords="0,0,996,25" class="floatbox" rel="floatbox" rev="type:ajax height:355 width:410 autoFitHTML:true scrolling:no outerClose:true controlsPos:tr" href="/assets/ocp/promos/130903_freeship/pop_up.html" title="See Details" alt="See Details" name="EB Top Rail:Image:Promo" />
+        </map>
+</div>
+
+
+
+
+<style>
+body.EB.CHECKOUT.SHOPPING-BAG.wishlist #new_rail { display: block}
+#cat1 #shoulder { height: 0px !important }
+body.EB #new_rail {
+    background-color: transparent;
+    clear: both;
+    display: block;
+    visibility: visible;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+    overflow: visible;
+    padding: 0;
+    *padding-bottom: 5px;
+    width: 996px !important;
+    z-index: 3;
+    margin-top: 2px !important;
+}
+#fbBox #fbCaption.fb_white { display: none !important }
+
+body
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+div#fbBox {
+    height:500px !important;
+}
+
+#disclaimer_container
+{
+    width: 400px !important;
+    height: 575px !important;
+    padding-left: 28px;
+    padding-top:26px;
+    position: relative;
+    background-color:#333333;
+}
+.disclaimer_head {
+    font-family:"Arial", sans-serif;
+    color:#FF3333;
+    font-size:26px;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+.disclaimer_head_wh {
+    font-family:"Arial", sans-serif;
+    color:#FFFFFF;
+    font-size:26px;
+    text-transform:uppercase;
+    font-weight:regular;
+}
+.disclaimer_subhead {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    color:#FFFFFF;
+    font-size:12px;
+}
+.disclaimer_promocode_head {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    color:#FFFFFF;
+    font-size:18px;
+    padding-top:16px;
+    padding-right:12px;
+    line-height:1.2;
+}
+.disclaimer_promocode_subhead {
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    color:#FFFFFF;
+    font-size:12px;
+}
+.disclaimer_copy
+{
+    font-size: 12px;
+    width: 370px;
+    line-height: 1.6;
+    color:#FFFFFF;
+    padding-top:16px;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+.disclaimer_copy p {
+    color:#FFFFFF;
+    font-family:"Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    line-height: 1.6;
+}
+ .disclaimer_copy p a {
+    color:#FFFFFF;
+    text-decoration:underline;
+    font-size:14px;
+    font-weight:bold;
+ }
+#disclaimer_close
+{
+    display: none !important; /*font-size: 10px;
+    position: absolute;
+    right: -10px;
+    top: 10px;*/
+}
+#disclaimer_close a
+{
+    text-decoration: none;
+    color: #333333;
+}
+</style>
+<div style="position: relative;">
+    <img src="/assets/ocp/promos/131108_freeship_returns/site_wide_rail.png" border="0" width="996" height="43" usemap="#site_wide_rail"/>
+        <map name="site_wide_rail" id="Map1">
+            <area shape="rect" coords="602,0,996,43" class="floatbox" rel="floatbox" rev="type:ajax height:575 width:388 autoFitHTML:true scrolling:no outerClose:true controlsPos:tr" href="/assets/ocp/promos/131104_freeship_returns/pop_up_arctic.html" title="See Details" alt="See Details" name="EB Top Rail:Image:Promo" />
+        </map>
+</div>
+<script type="text/javascript">
+    $j(document).ready(function () {
+        if ($j('#promotionCodes input[type=text]').length) { //only show if input is on page
+            $j('body.DELIVERY--EXTRAS #promotionCodes').append('<div id="promoCodeMessage"></div>');
+        }
+    });
+</script>
+<style type="text/css">
+    #promotionCodes
+    {
+        position: relative;
+    }
+    #promoCodeMessage
+    {
+        background-image: url("/assets/ocp/promos/131104_freeship_returns/cart_code_freeship.gif");
+        bottom: 16px;
+        display: block;
+        height: 86px;
+        position: absolute;
+        right: 26px;
+        width: 212px;
+        z-index: 999;
+    }
+</style>
